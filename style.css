@@ -1,0 +1,158 @@
+/* CONFIG PADRÃO */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a{
+    color: #3c96ed;
+    text-decoration: none; /* para tirar o azul dos links*/
+}
+
+body{
+    background-color: #FAFAFA;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; /* por padrão será 14 pixeis*/
+    line-height: 18px;
+}
+
+/* FIM DA CONFIG PADRÃO*/
+
+/* INICIO DA ESTRUTURA */
+.wrapper{
+    height: 100dvh; /* envolve o todo */
+}
+
+.container{ /* envolve o container uma parte mais específica do todo */
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.column{ /* dividi em duas colunas */
+    flex-grow: 1; /* faz com que as colunas tenham que disputar espaço */
+    width: 50%;
+}
+
+/* FIM DA ESTRUTURA */
+
+/* INCIO DA COLUNA DA ESQUERDA */
+.left{
+    background-image: url("imgs/FotoPerfilInsta.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* FIM DA COLUNA ESQUERDA */
+
+.right{
+    padding-left: 20px;
+}
+
+.login_painel{
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.img_logo{
+    width: 175px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"], input[type="text"]{ /* quero personalizar apenas os input que forem do tipo 'password' e do tipo 'text' */
+    background-color: #FFFFFF;
+    border: 1px solid rgb(236, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: #000000;
+}
+
+input[type="password"]::placeholder,input[type="text"]::placeholder {
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer esse CSS */
+    outline: 0; /* tira a borda ao clicar no input */
+    border: 1px solid #3c96ed;
+}
+
+.botao_login{
+    margin-top: 10px;
+    height: 30px;
+    width: 320px;
+    outline: none;
+    background-color: #3c96ed;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.infobox{
+    background-color: #FFFFFF;
+    height: 60px;
+    border: 1px solid rgb(236, 234, 234);
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infobox p a{
+    font-weight: bold;
+    user-select: none;
+}
+
+.apps{
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.apps p{
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.apps img{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.footer{
+    border: red solid 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+}
