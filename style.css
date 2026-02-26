@@ -145,7 +145,6 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
 }
 
 .footer{
-    border: red solid 10px;
     display: flex;
     flex-direction: row;
     padding-left: 10px;
@@ -154,5 +153,10 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
 .footer p{
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 40px;
+}
+
+.footer span{
+    margin-left: 30px;
+    color:gray;
 }
