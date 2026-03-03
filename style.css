@@ -148,6 +148,7 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
     display: flex;
     flex-direction: row;
     padding-left: 10px;
+    text-align: center;
 }
 
 .footer p{
