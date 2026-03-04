@@ -142,13 +142,12 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
 .apps img{
     margin-top: 10px;
     margin-left: 5px;
+    width: 130px;
 }
 
 .footer{
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
     text-align: center;
+    padding-left: 10px;
 }
 
 .footer p{
@@ -158,6 +157,29 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
 }
 
 .footer span{
-    margin-left: 30px;
+    margin-left: 5px;
     color:gray;
 }
+
+/* RESPONSIVIDADE */
+@media(max-width: 1024px){
+    .left{
+        display: none;
+    }
+
+    .footer p{
+        font-size: 10px;
+        text-align: center;
+        margin-left: 6px;
+    }
+
+    .right{
+        padding: 0;
+    }
+
+    .container{
+        width: 90%;
+    }
+}
+
+/* FIM DA RESPONSIVIDADE */
