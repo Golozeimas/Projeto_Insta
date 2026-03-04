@@ -6,12 +6,16 @@
 }
 
 body{
+    --cor-azul-insta:#3c96ed;
+    --branco-do-insta: #FFFFFF;
+    --cor-de-fundo:#FAFAFA;
+    --cor-da-borda:#e6e6e6;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: #3c96ed;
+    color: var(--cor-azul-insta);
     font-weight: bold;
 }
 
@@ -22,18 +26,18 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FAFAFA;
+    background-color: var(--cor-de-fundo);
 }
 
 main{
     margin-top: 40px;
-    background-color: white;
+    background-color: var(--branco-do-insta);
     width: 400px;
     height: 500px;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid var(--cor-da-borda);
     border-radius: 4px;
 }
 
@@ -52,9 +56,9 @@ button{
     height: 35px;
     width: 300px;
     outline: none;
-    background-color: #3c96ed;
+    background-color: var(--cor-azul-insta);
     border: none;
-    color: #FFFFFF;
+    color: var(--branco-do-insta);
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -71,7 +75,7 @@ button{
 
 .line{
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: var(--cor-da-borda);
     width: 35%;
 }
 
@@ -88,13 +92,13 @@ form input{
     border-radius: 4px;
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #e6e6e6;
+    background-color: var(--cor-da-borda);
     color: #000000;
 }
 
 form input:focus{
     outline: 0;
-    border: #3c96ed solid 1px;
+    border: var(--cor-azul-insta) solid 1px;
     color: #000000;
 }
 
@@ -105,7 +109,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #e6e6e6 solid 1px;
+    border: var(--cor-da-borda) solid 1px;
     background-color: #FFFFFF;
 }
 

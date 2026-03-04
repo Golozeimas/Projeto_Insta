@@ -7,12 +7,16 @@
 }
 
 a{
-    color: #3c96ed;
+    color: var(--cor-azul-insta);
     text-decoration: none; /* para tirar o azul dos links*/
 }
 
 body{
-    background-color: #FAFAFA;
+    --cor-azul-insta:#3c96ed;
+    --branco-do-insta: #FFFFFF;
+    --cor-de-fundo:#FAFAFA;
+    --cor-da-borda:#e6e6e6;
+    background-color: var(--cor-de-fundo);
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -60,8 +64,8 @@ body{
 }
 
 .login_painel{
-    background-color: white;
-    border: 1px solid #e6e6e6;
+    background-color: var(--branco-do-insta);
+    border: 1px solid var(--cor-azul-insta);
     text-align: center;
     padding: 20px 0;
 }
@@ -95,7 +99,7 @@ input[type="password"]::placeholder,input[type="text"]::placeholder {
 
 input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer esse CSS */
     outline: 0; /* tira a borda ao clicar no input */
-    border: 1px solid #3c96ed;
+    border: 1px solid var(--cor-azul-insta);
 }
 
 .botao_login{
@@ -103,9 +107,9 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
     height: 30px;
     width: 320px;
     outline: none;
-    background-color: #3c96ed;
+    background-color: var(--cor-azul-insta);
     border: none;
-    color: #FFFFFF;
+    color: var(--branco-do-insta);
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -114,7 +118,7 @@ input[type="password"]:focus,input[type="text"]:focus{ /* ao clicar vai aparecer
 }
 
 .infobox{
-    background-color: #FFFFFF;
+    background-color: var(--branco-do-insta);
     height: 60px;
     border: 1px solid rgb(236, 234, 234);
     margin: 10px auto 0;
